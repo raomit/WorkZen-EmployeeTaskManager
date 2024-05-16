@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    @Styles.Render("~/Content/vendorcss")
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    @Styles.Render("~/Content/layoutcss")
+
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/Content/assets/images/favicon.png" />
+</head>
+<body>
+    @RenderBody();
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/vendorjs");
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    @Scripts.Render("~/bundles/js");
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+</body>
+</html>

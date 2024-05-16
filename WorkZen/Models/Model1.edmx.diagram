@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="316c97803411478baf81a383266c61cc" Name="Diagram1">
+        <EntityTypeShape EntityType="WorkZenModel.Department" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorkZenModel.Employee" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorkZenModel.Task" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="WorkZenModel.FK__Employee__depart__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="WorkZenModel.FK__Employee__report__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="WorkZenModel.FK__Task__approvedOr__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="WorkZenModel.FK__Task__approverId__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="WorkZenModel.FK__Task__employeeId__3E52440B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

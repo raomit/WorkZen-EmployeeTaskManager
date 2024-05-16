@@ -1,0 +1,78 @@
+﻿
+@model (WorkZen.Models.Employee CurrentEmployee, List<WorkZen.Models.Task> ManagerTasks)
+
+<div class="main-task-header-container container-fluid d-flex justify-content-between mb-4">
+    <h2>Manager Tasks</h2>
+</div>
+
+<div class="card">
+    <div class="card-body">
+
+        <table class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>Task By</th>
+                    <th>Task Date</th>
+                    <th>Task Name</th>
+                    <th>Task Description</th>
+                    <th>Created On</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (@Model.ManagerTasks != null)
+                {
+                    foreach (var managerTask in @Model.ManagerTasks)
+                    {
+                        if (managerTask.status.Contains("pending"))
+                        {
+                            <tr>
+                                <td>@managerTask.Employee2.firstName (@managerTask.Employee2.employeeCode)</td>
+                                <td id="taskId" style="display: none;">@managerTask.id</td>
+                                <td>@managerTask.taskDate</td>
+                                <td>@managerTask.taskName</td>
+                                <td>@managerTask.taskDescription</td>
+                                <td>@managerTask.createdOn</td>
+                                <td>
+                                    <a class="btn btn-gradient-success" id="approved" onclick="updateTaskStatus(this)">Approve</a>
+                                    <a class="btn btn-gradient-danger" id="rejectd" onclick="updateTaskStatus(this)">Reject</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+
+                @*<tr>
+                        <td>Jacob</td>
+                        <td>Photoshop</td>
+                        <td class="text-danger"> 28.76% <i class="mdi mdi-arrow-down"></i></td>
+                        <td><label class="badge badge-danger">Pending</label></td>
+                    </tr>*@
+                @*<tr>
+                        <td>Messsy</td>
+                        <td>Flash</td>
+                        <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
+                        <td><label class="badge badge-warning">In progress</label></td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Premier</td>
+                        <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
+                        <td><label class="badge badge-info">Fixed</label></td>
+                    </tr>
+                    <tr>
+                        <td>Peter</td>
+                        <td>After effects</td>
+                        <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
+                        <td><label class="badge badge-success">Completed</label></td>
+                    </tr>
+                    <tr>
+                        <td>Dave</td>
+                        <td>53275535</td>
+                        <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
+                        <td><label class="badge badge-warning">In progress</label></td>
+                    </tr>*@
+            </tbody>
+        </table>
+    </div>
+</div>

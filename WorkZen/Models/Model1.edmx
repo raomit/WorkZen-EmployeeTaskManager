@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WorkZenModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="80" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="employeeCode" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="lastName" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="birthDate" Type="date" Nullable="false" />
+          <Property Name="gender" Type="char" MaxLength="6" Nullable="false" />
+          <Property Name="departmentId" Type="int" />
+          <Property Name="reportingPerson" Type="int" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="taskDate" Type="date" Nullable="false" />
+          <Property Name="employeeId" Type="int" />
+          <Property Name="taskName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="taskDescription" Type="text" Nullable="false" />
+          <Property Name="approverId" Type="int" />
+          <Property Name="approvedOrRejectedBy" Type="int" />
+          <Property Name="status" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="createdOn" Type="date" Nullable="false" />
+          <Property Name="modifiedOn" Type="date" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Employee__depart__398D8EEE">
+          <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="departmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Employee__report__3B75D760">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Employee1" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Employee1">
+              <PropertyRef Name="reportingPerson" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__approvedOr__403A8C7D">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="approvedOrRejectedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__approverId__3F466844">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="approverId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__employeeId__3E52440B">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="employeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="WorkZenModelStoreContainer">
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Employee__depart__398D8EEE" Association="Self.FK__Employee__depart__398D8EEE">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Employee__report__3B75D760" Association="Self.FK__Employee__report__3B75D760">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Employee1" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__approvedOr__403A8C7D" Association="Self.FK__Task__approvedOr__403A8C7D">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__approverId__3F466844" Association="Self.FK__Task__approverId__3F466844">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__employeeId__3E52440B" Association="Self.FK__Task__employeeId__3E52440B">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WorkZenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK__Employee__depart__398D8EEE" FromRole="Department" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="employeeCode" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="firstName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="birthDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="gender" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="departmentId" Type="Int32" />
+          <Property Name="reportingPerson" Type="Int32" />
+          <NavigationProperty Name="Department" Relationship="Self.FK__Employee__depart__398D8EEE" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="Employee1" Relationship="Self.FK__Employee__report__3B75D760" FromRole="Employee" ToRole="Employee1" />
+          <NavigationProperty Name="Employee2" Relationship="Self.FK__Employee__report__3B75D760" FromRole="Employee1" ToRole="Employee" />
+          <NavigationProperty Name="Tasks" Relationship="Self.FK__Task__approvedOr__403A8C7D" FromRole="Employee" ToRole="Task" />
+          <NavigationProperty Name="Tasks1" Relationship="Self.FK__Task__approverId__3F466844" FromRole="Employee" ToRole="Task" />
+          <NavigationProperty Name="Tasks2" Relationship="Self.FK__Task__employeeId__3E52440B" FromRole="Employee" ToRole="Task" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="taskDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="employeeId" Type="Int32" />
+          <Property Name="taskName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="taskDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="approverId" Type="Int32" />
+          <Property Name="approvedOrRejectedBy" Type="Int32" />
+          <Property Name="status" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="createdOn" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="modifiedOn" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK__Task__approvedOr__403A8C7D" FromRole="Task" ToRole="Employee" />
+          <NavigationProperty Name="Employee1" Relationship="Self.FK__Task__approverId__3F466844" FromRole="Task" ToRole="Employee" />
+          <NavigationProperty Name="Employee2" Relationship="Self.FK__Task__employeeId__3E52440B" FromRole="Task" ToRole="Employee" />
+        </EntityType>
+        <Association Name="FK__Employee__depart__398D8EEE">
+          <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="departmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Employee__report__3B75D760">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Employee1" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Employee1">
+              <PropertyRef Name="reportingPerson" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__approvedOr__403A8C7D">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="approvedOrRejectedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__approverId__3F466844">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="approverId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Task__employeeId__3E52440B">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="employeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MitRaoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Departments" EntityType="Self.Department" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Tasks" EntityType="Self.Task" />
+          <AssociationSet Name="FK__Employee__depart__398D8EEE" Association="Self.FK__Employee__depart__398D8EEE">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Employee__report__3B75D760" Association="Self.FK__Employee__report__3B75D760">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Employee1" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__approvedOr__403A8C7D" Association="Self.FK__Task__approvedOr__403A8C7D">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Task" EntitySet="Tasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__approverId__3F466844" Association="Self.FK__Task__approverId__3F466844">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Task" EntitySet="Tasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Task__employeeId__3E52440B" Association="Self.FK__Task__employeeId__3E52440B">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Task" EntitySet="Tasks" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WorkZenModelStoreContainer" CdmEntityContainer="MitRaoEntities">
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="WorkZenModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="WorkZenModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="employeeCode" ColumnName="employeeCode" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="birthDate" ColumnName="birthDate" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="departmentId" ColumnName="departmentId" />
+                <ScalarProperty Name="reportingPerson" ColumnName="reportingPerson" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tasks">
+            <EntityTypeMapping TypeName="WorkZenModel.Task">
+              <MappingFragment StoreEntitySet="Task">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="taskDate" ColumnName="taskDate" />
+                <ScalarProperty Name="employeeId" ColumnName="employeeId" />
+                <ScalarProperty Name="taskName" ColumnName="taskName" />
+                <ScalarProperty Name="taskDescription" ColumnName="taskDescription" />
+                <ScalarProperty Name="approverId" ColumnName="approverId" />
+                <ScalarProperty Name="approvedOrRejectedBy" ColumnName="approvedOrRejectedBy" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+                <ScalarProperty Name="modifiedOn" ColumnName="modifiedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

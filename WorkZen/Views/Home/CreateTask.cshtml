@@ -1,0 +1,196 @@
+﻿
+@{
+    ViewBag.Title = "CreateTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model (WorkZen.Models.Employee CurrentEmployee, List<WorkZen.Models.Employee> Employees, List<WorkZen.Models.Task> CurrentEmployeeTasks)
+
+@if (Model.CurrentEmployee.Employee2 == null)
+{
+    <h5 class="text-danger">**You cant make a task entry until you are assigned a leader. Please contact higher authority.</h5>
+}
+
+<div class="main-task-header-container container-fluid d-flex justify-content-between mb-4">
+    <h2>CreateTask</h2>
+    @if (Model.CurrentEmployee.Employee2 == null)
+    {
+        <button class="btn btn-rounded btn-gradient-primary" data-bs-toggle="modal" data-bs-target="#create-task" disabled>Create TaskLog Entry</button>
+    }
+    else
+    {
+        <button class="btn btn-rounded btn-gradient-primary" onclick="getTaskPopUp(this)" data-bs-toggle="modal" data-bs-target="#create-task">Create TaskLog Entry</button>
+    }
+
+</div>
+
+@* Create Task Modal Begin *@
+<div class="modal fade modal-lg" id="create-task" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Create Task Log Entry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="/Tasks/CreateTask" method="POST">
+                <div class="modal-body" id="create-task-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+                    <button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@* Create Task Modal End *@
+
+@* Update Task Modal Start *@
+<div class="modal fade modal-lg" id="update-task" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Update Task Log Entry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="/Home/UpdateTask" method="POST">
+                <div class="modal-body" id="update-task-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-gradient-primary me-2">Update</button>
+                    <button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@* Update Task Modal En *@
+
+
+
+@* Delete Pop Up Starts *@
+<div class="modal fade modal-sm" id="delete-task" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete Task</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="/Tasks/DeleteTask" method="POST">
+                <div class="modal-body" id="delete-task-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-gradient-danger me-2">Delete</button>
+                    <button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-body">
+
+        <table class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>EmployeeCode</th>
+                    <th>Task Date</th>
+                    <th>Task Name</th>
+                    <th>Status</th>
+                    <th>Approved/Rejected By</th>
+                    <th>Created On</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.CurrentEmployeeTasks != null)
+                {
+                    foreach (var empTask in @Model.CurrentEmployeeTasks)
+                    {
+                        <tr>
+                            <td>@Model.CurrentEmployee.employeeCode</td>
+                            <td id="taskId" style="display: none;">@empTask.id</td>
+                            <td>@empTask.taskDate</td>
+                            <td>@empTask.taskName</td>
+                            @if (@empTask.status.Contains("pending"))
+                            {
+                                <td><label class="badge badge-warning">Pending</label></td>
+                            }
+                            else if (@empTask.status.Contains("approved"))
+                            {
+                                <td><label class="badge badge-success">Approved</label></td>
+                            }
+                            else
+                            {
+                                <td><label class="badge badge-danger">Rejected</label></td>
+                            }
+                            @if (@empTask.approvedOrRejectedBy == null)
+                            {
+                                <td>None</td>
+                            }
+                            else
+                            {
+                                <td>@empTask.approvedOrRejectedBy</td>
+                            }
+                            <td>@empTask.createdOn</td>
+                            @if (empTask.status.Contains("approved") || empTask.status.Contains("rejected"))
+                            {
+                                <td>
+                                    <a class="btn btn-gradient-danger" onclick="getDeleteTaskPopUp(this)" data-bs-toggle="modal" data-bs-target="#delete-task">Delete</a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <a class="btn btn-gradient-success" data-bs-toggle="modal" data-bs-target="#update-task" onclick="editTaskPopUp(this)">Edit</a>
+                                    <a class="btn btn-gradient-danger" onclick="getDeleteTaskPopUp(this)" data-bs-toggle="modal" data-bs-target="#delete-task">Delete</a>
+                                </td>
+                            }
+                        </tr>
+                            }
+                }
+
+                @*<tr>
+                        <td>Jacob</td>
+                        <td>Photoshop</td>
+                        <td class="text-danger"> 28.76% <i class="mdi mdi-arrow-down"></i></td>
+                        <td><label class="badge badge-danger">Pending</label></td>
+                    </tr>*@
+                @*<tr>
+                        <td>Messsy</td>
+                        <td>Flash</td>
+                        <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
+                        <td><label class="badge badge-warning">In progress</label></td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Premier</td>
+                        <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
+                        <td><label class="badge badge-info">Fixed</label></td>
+                    </tr>
+                    <tr>
+                        <td>Peter</td>
+                        <td>After effects</td>
+                        <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
+                        <td><label class="badge badge-success">Completed</label></td>
+                    </tr>
+                    <tr>
+                        <td>Dave</td>
+                        <td>53275535</td>
+                        <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
+                        <td><label class="badge badge-warning">In progress</label></td>
+                    </tr>*@
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
