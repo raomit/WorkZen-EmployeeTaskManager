@@ -1,5 +1,3 @@
-use MitRao
-
 create table Department(
 	id int identity(1,1) not null,
 	name varchar(80) not null,
