@@ -1,0 +1,424 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|c:\\users\\mit\\documents\\dotnetapps\\workzen\\workzen\\views\\shared\\teamtasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\shared\\teamtasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\customfilters\\authenticationfilters\\loginauthfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\customfilters\\authenticationfilters\\loginauthfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\content\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\content\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\home\\createtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\home\\createtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\home\\managers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\home\\managers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|c:\\users\\mit\\documents\\dotnetapps\\workzen\\workzen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|c:\\users\\mit\\documents\\dotnetapps\\workzen\\workzen\\views\\shared\\_taskpopuppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\shared\\_taskpopuppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\shared\\_loginsignuplayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\shared\\_loginsignuplayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\shared\\_employeepopuppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\shared\\_employeepopuppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\customfilters\\authenticationfilters\\redirectauthempfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\customfilters\\authenticationfilters\\redirectauthempfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\shared\\_employeedelpopuppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\shared\\_employeedelpopuppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\workzen\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECAE4BA6-876B-4420-A3B6-C98748965719}|WorkZen\\WorkZen.csproj|solutionrelative:workzen\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T05:15:04.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Content\\assets\\js\\main.js",
+              "RelativeDocumentMoniker": "WorkZen\\Content\\assets\\js\\main.js",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Content\\assets\\js\\main.js",
+              "RelativeToolTip": "WorkZen\\Content\\assets\\js\\main.js",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAmwIEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-04T17:51:56.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAB6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T11:09:55.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Managers.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\Managers.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Home\\Managers.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\Managers.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Home\\Managers.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T01:54:12.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WorkZen\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WorkZen\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAkwHYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:10:52.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeamTasks.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\TeamTasks.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Shared\\TeamTasks.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\TeamTasks.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Shared\\TeamTasks.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T08:26:29.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateTask.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\CreateTask.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Home\\CreateTask.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\CreateTask.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Home\\CreateTask.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAD4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T08:13:23.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginAuthFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\CustomFilters\\AuthenticationFilters\\LoginAuthFilter.cs",
+              "RelativeDocumentMoniker": "WorkZen\\CustomFilters\\AuthenticationFilters\\LoginAuthFilter.cs",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\CustomFilters\\AuthenticationFilters\\LoginAuthFilter.cs",
+              "RelativeToolTip": "WorkZen\\CustomFilters\\AuthenticationFilters\\LoginAuthFilter.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAcwB0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T05:54:54.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_LoginSignupLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_LoginSignupLayout.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Shared\\_LoginSignupLayout.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_LoginSignupLayout.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Shared\\_LoginSignupLayout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T11:32:17.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T11:35:31.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_TaskPopUpPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_TaskPopUpPartial.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Shared\\_TaskPopUpPartial.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_TaskPopUpPartial.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Shared\\_TaskPopUpPartial.cshtml",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAADAAAACNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T10:40:17.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "WorkZen\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "WorkZen\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAADwvx4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T10:37:56.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_EmployeePopUpPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_EmployeePopUpPartial.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Shared\\_EmployeePopUpPartial.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_EmployeePopUpPartial.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Shared\\_EmployeePopUpPartial.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T06:07:58.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Content\\Site.css",
+              "RelativeDocumentMoniker": "WorkZen\\Content\\Site.css",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Content\\Site.css",
+              "RelativeToolTip": "WorkZen\\Content\\Site.css",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwBMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-04T17:19:41.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T10:34:01.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "WorkZen\\Models\\Task.cs",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Models\\Task.cs",
+              "RelativeToolTip": "WorkZen\\Models\\Task.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAuwBcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T04:11:28.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "WorkZen\\Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "WorkZen\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-05-04T11:04:20.536Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WorkZen\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WorkZen\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAADgvx4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:34:56.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RedirectAuthEmpFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\CustomFilters\\AuthenticationFilters\\RedirectAuthEmpFilter.cs",
+              "RelativeDocumentMoniker": "WorkZen\\CustomFilters\\AuthenticationFilters\\RedirectAuthEmpFilter.cs",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\CustomFilters\\AuthenticationFilters\\RedirectAuthEmpFilter.cs",
+              "RelativeToolTip": "WorkZen\\CustomFilters\\AuthenticationFilters\\RedirectAuthEmpFilter.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T08:24:09.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_EmployeeDelPopUpPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_EmployeeDelPopUpPartial.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Shared\\_EmployeeDelPopUpPartial.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Shared\\_EmployeeDelPopUpPartial.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Shared\\_EmployeeDelPopUpPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T04:59:42.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Global.asax.cs",
+              "RelativeDocumentMoniker": "WorkZen\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Global.asax.cs",
+              "RelativeToolTip": "WorkZen\\Global.asax.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T10:25:48.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AQIAALEAAAAAAAAAAAAqwMAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T12:22:35.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T12:41:13.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "WorkZen\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Mit\\Documents\\DotNetApps\\WorkZen\\WorkZen\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "WorkZen\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T12:40:58.332Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

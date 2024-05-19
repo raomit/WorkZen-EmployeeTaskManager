@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WorkZenModelStoreContainer" CdmEntityContainer="MitRaoEntities">
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="WorkZenModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="WorkZenModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="employeeCode" ColumnName="employeeCode" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="birthDate" ColumnName="birthDate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="departmentId" ColumnName="departmentId" />
+          <ScalarProperty Name="reportingPerson" ColumnName="reportingPerson" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="WorkZenModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="taskDate" ColumnName="taskDate" />
+          <ScalarProperty Name="employeeId" ColumnName="employeeId" />
+          <ScalarProperty Name="taskName" ColumnName="taskName" />
+          <ScalarProperty Name="taskDescription" ColumnName="taskDescription" />
+          <ScalarProperty Name="approverId" ColumnName="approverId" />
+          <ScalarProperty Name="approvedOrRejectedBy" ColumnName="approvedOrRejectedBy" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="modifiedOn" ColumnName="modifiedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
