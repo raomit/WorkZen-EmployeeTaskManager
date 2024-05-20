@@ -22,7 +22,7 @@ namespace WorkZen.Models
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            throw new UnintentionalCodeFirstException();
         }
     
         public virtual DbSet<Department> Departments { get; set; }

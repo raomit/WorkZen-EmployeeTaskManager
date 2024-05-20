@@ -13,7 +13,6 @@ namespace WorkZen.CustomFilters.AuthenticationFilters
         {
             if (!string.IsNullOrEmpty(Convert.ToString(filterContext.HttpContext.Session["email"])))
             {
-
                 filterContext.Result = new RedirectResult("~/Home/index");
                 return;
             }

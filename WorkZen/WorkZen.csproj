@@ -647,6 +647,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Repository\RepositroyInterfaces\" />
     <Folder Include="Views\Tasks\" />
   </ItemGroup>
   <ItemGroup>

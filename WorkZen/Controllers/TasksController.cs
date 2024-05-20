@@ -40,13 +40,33 @@ namespace WorkZen.Controllers
             SqlParameter size = new SqlParameter("@size", EmployeeTasksParams.length);
 
             List<WorkZen.Models.Task> EmployeesPagedTasks;
+
+            var SearchValue = EmployeeTasksParams.search.value;
             
 
             int TotalEmployeeTasks = this._dbContext.Database.SqlQuery<int>("select count(*) from Task t join Employee e on e.id = t.employeeId where e.departmentId = 1").Single();
 
-            if (EmployeeTasksParams.search.value != null)
+            if (!string.IsNullOrEmpty(SearchValue))
             {
-                return new HttpStatusCodeResult(HttpStatusCode.OK);
+                EmployeesPagedTasks = this._dbContext.Tasks.Where(task => task.taskDate.ToString().Contains(SearchValue) ||
+                task.taskName.ToLower().Contains(SearchValue.ToLower()) ||
+                task.taskDescription.ToLower().Contains(SearchValue.ToLower()) ||
+                task.employeeId.ToString().Contains(SearchValue) ||
+                task.createdOn.ToString().Contains(SearchValue)).ToList().Skip(EmployeeTasksParams.start).Take(EmployeeTasksParams.length).ToList();
+
+                var TasksJson = JsonConvert.SerializeObject(new
+                {
+                    draw = EmployeeTasksParams.draw,
+                    recordsTotal =  TotalEmployeeTasks,
+                    recordsFiltered = EmployeesPagedTasks.Count(),
+                    data = EmployeesPagedTasks
+                }, new JsonSerializerSettings
+                {
+                    ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                    DateFormatString = "yyyy-mm-dd"
+                });
+
+                return Content(TasksJson, "application/json");
             }   
             else
             {
@@ -69,7 +89,10 @@ namespace WorkZen.Controllers
                 }
                 else
                 {
-                    EmployeesPagedTasks = this._dbContext.Database.SqlQuery<WorkZen.Models.Task>("exec get_paged_all_employee_tasks @offset, @size, @order_dir, @order_column", offset, size, new SqlParameter("@order_dir", EmployeeTasksParams.order.dir), new SqlParameter("@order_column", EmployeeTasksParams.columns[EmployeeTasksParams.order.column].data)).ToList();
+
+                    EmployeesPagedTasks = this._dbContext.Database.SqlQuery<WorkZen.Models.Task>("exec get_paged_all_employee_tasks @offset, @size, @order_dir, @order_column", offset, size,
+                        new SqlParameter("@order_dir", EmployeeTasksParams.order[0].dir),
+                        new SqlParameter("@order_column", EmployeeTasksParams.columns[EmployeeTasksParams.order[0].column].data)).ToList();
 
                     var json = JsonConvert.SerializeObject(new
                     {

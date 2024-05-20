@@ -131,7 +131,7 @@ function getTeamEmployeeTasks(target) {
                 {
                     data: "employeeId",
                     "autoWidth": true,
-                    "searchable": true
+                    "searchable": true,
                 },
                 {
                     data: "taskDate",
@@ -164,6 +164,16 @@ function getTeamEmployeeTasks(target) {
 <button type="button" data-id="${row.id}" class="btn btn-gradient-danger delete">Delete</button>
                            `;
                     }
+                }
+            ],
+            "columnDefs": [
+                {
+                    "orderable": true,
+                    "targets": [0,1,2,3,4]
+                },
+                {
+                    "orderable": false,
+                    "targets": [5]
                 }
             ]
         });

@@ -19,7 +19,7 @@ namespace WorkZen.Models.CustomModels
         public int length { get; set; }
         public Search search { get; set; }
         public bool searchRegex { get; set; }
-        public Ordering order { get; set; }
+        public List<Ordering> order { get; set; }
         public List<Column> columns { get; set; }
 
         public class Ordering
